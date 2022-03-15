@@ -1,6 +1,6 @@
 const {Rental, validate} = require('../models/rental'); 
-const {Movie} = require('../models/movies'); 
-const {Customer} = require('../models/customers'); 
+const {Movie} = require('../models/movie'); 
+const {Customer} = require('../models/customer'); 
 const mongoose = require('mongoose');
 // const Fawn = require('fawn');
 const express = require('express');
@@ -48,9 +48,9 @@ router.post('/', async (req, res) => {
   
   //   res.send(rental);
   // }
-  // catch(ex) {
-  //   res.status(500).send('Something failed.');
-  // }
+//   catch(ex) {
+//     res.status(500).send('Something failed.');
+//   }
 });
 
 router.get('/:id', async (req, res) => {
